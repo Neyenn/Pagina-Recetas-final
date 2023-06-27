@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fffde1;
+}
+header {
+  display: flex;
+  border: solid rgb(0, 0, 0) 3px;
+  justify-content: space-between;
+  height: 100px;
+  background-color: red;
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  align-items: center;
+  z-index: 100;
+}
+header input {
+  height: 2rem;
+  width: 55rem;
+  display: flex;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo a {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 50px;
+  color: white;
+  font-family: "Pacifico", cursive;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav li {
+  text-align: center;
+  font-size: 17px;
+}
+nav ul li {
+  margin: 0 16px;
+  padding: 4px;
+  transition: border-bottom ease 1s;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid #fffde1;
+}
+
+nav ul li a {
+  color: white;
+  font-family: "Lora", serif;
+  text-decoration: none;
+}
+main {
+  background-color: #fff9a4;
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+  border-radius: 10px;
+  min-height: 800px;
+}
+.bienvenida {
+  border-radius: 5px;
+  border: 2px solid #72777cb2;
+  display: block;
+  gap: 15px;
+  background-color: #fffde1;
+  max-width: 1200px;
+  padding: 10px;
+  text-align: justify;
+}
+.bienvenida h2 {
+  font-family: "Prompt", sans-serif;
+}
+.bienvenida ul li {
+  font-size: 20px;
+  font-family: "Lora", serif;
+  animation-name: aparicion;
+  animation-duration: 2s;
+  padding: 5px;
+  margin: 12px;
+}
+.p-query {
+  display: none;
+  animation-name: aparicion;
+  animation-duration: 2s;
+}
+.recetas {
+  border-radius: 5px;
+  border: 2px solid #72777cb2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #fff9a4;
+  max-width: 1200px;
+  padding: 10px;
+  animation-name: aparicion;
+  animation-duration: 2s;
+}
+.recetas h4 {
+  background-color: #e22424;
+  font-family: "Prompt", sans-serif;
+}
+.case-recetas {
+  min-height: 300px;
+  min-width: 300px;
+  background-color: #fffde1;
+  text-align: center;
+  gap: 2px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.recetas :hover {
+  transform: scale(1.05);
+  transition: transform ease 1s;
+}
+.case-recetas a {
+  text-decoration: none;
+  color: black;
+}
+.case-recetas h4 {
+  font-size: 24px;
+  font-family: "Prompt", sans-serif;
+  padding-bottom: 10px;
+}
+.box-main h2 {
+  border: 2px solid #72777cb2;
+  font-size: 40px;
+  font-family: "Prompt", sans-serif;
+}
+.case-recetas img {
+  height: 300px;
+  width: 315px;
+}
+.box-main {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+.redes {
+  border-radius: 5px;
+  border: 2px solid #72777cb2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #fff9a4;
+  max-width: 1200px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+.red {
+  transition: transform ease 1s;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+.red:hover {
+  transform: scale(1.1);
+}
+.iframe-video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.iframe-video iframe {
+  height: 80vh;
+  width: 120vh;
+}
+.iframe-h3 {
+  font-size: 50px;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  width: auto;
+  font-family: "Prompt", sans-serif;
+}
+.iframe-p {
+  padding: 10px;
+  font-size: 25px;
+  color: black;
+  font-family: "Lora", serif;
+}
+.contactanos {
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+  padding: 10px;
+}
+.contactanos button {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: greenyellow;
+  font-size: 20px;
+}
+.inscribite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+}
+.formulario {
+  background-color: #a39e56;
+  display: flex;
+  max-width: 310px;
+  padding: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.formulario label {
+  margin: 10px;
+}
+.formulario button {
+  padding: 25px;
+  margin-left: 4px;
+  width: 305px;
+  margin-top: 15px;
+  background-color: greenyellow;
+  font-size: 25px;
+}
+.gracias {
+  display: block;
+  text-align: center;
+  background-image: url(../Images/fondo-gracias.jpg);
+  height: 100vh;
+  border-radius: 20px;
+  justify-content: center;
+}
+.gracias h2 {
+  font-size: 50px;
+  font-family: "Prompt", sans-serif;
+}
+.gracias p {
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
+footer {
+  display: flex;
+  border: solid rgb(0, 0, 0) 3px;
+  justify-content: space-between;
+  min-height: 100px;
+  background-color: red;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  z-index: 100;
+  padding: 20px;
+  color: white;
+}
+
+/* Versión Mobile */
+@media (max-width: 425px) {
+  .case-recetas {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .case-recetas img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .redes img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* Versión tablet */
+@media (max-width: 788px) {
+  .iframe-video iframe {
+    width: 80vh;
+    height: 50vh;
+  }
+  .iframe-h3 {
+    font-size: 30px;
+  }
+  .iframe-p {
+    font-size: 15px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 35px;
+  }
+  .case-recetas {
+    width: 320px;
+  }
+  .case-recetas img {
+    width: 300px;
+  }
+  .redes img {
+    max-width: 192px;
+    max-height: 192px;
+  }
+}
+@media (max-width: 550px) {
+  header input {
+    display: none;
+  }
+  .redes img {
+    max-width: 128px;
+    max-height: 128px;
+  }
+  .bienvenida ul {
+    display: none;
+  }
+  .p-query {
+    display: block !important;
+    font-size: 25px;
+  }
+  .box-main h2 {
+    font-size: 25px;
+  }
+}
+
+@keyframes texto-viene-derecha {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
